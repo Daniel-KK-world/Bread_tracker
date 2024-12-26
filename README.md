@@ -66,13 +66,13 @@ Separate storage for each day's records
 
 🎨 UI Features
 
-Gradient background
-Modern card design with shadows
-Animated transitions and effects
-Responsive day selector
-Interactive buttons with hover effects
-Success/error notifications
-Clean and intuitive layout
+- Gradient background
+- Modern card design with shadows
+- Animated transitions and effects
+- Responsive day selector
+- Interactive buttons with hover effects
+- Success/error notifications
+- Clean and intuitive layout
 
 🛠️ Technical Implementation
 
@@ -87,15 +87,15 @@ Contributions, issues, and feature requests are welcome! Feel free to check issu
 💡 Development Notes
 This application was developed with the assistance of Anthropic's Claude AI, which helped in:
 
-Initial application structure
-UI/UX design recommendations
-Implementation of weekly tracking system
-Data persistence logic
-Animation and styling enhancements
+- Initial application structure
+- UI/UX design recommendations
+- Implementation of weekly tracking system
+- Data persistence logic
+- Animation and styling enhancements
 
-📜 License
+# 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-🙏 Acknowledgments
+# 🙏 Acknowledgments
 
 Built with the assistance of Claude by Anthropic
 Uses Bootstrap for styling
