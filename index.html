@@ -65,24 +65,29 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <div class="card p-4 animate__animated animate__fadeIn">
+                <div class="card p-4 animate__animated animate__fadeIn shadow-lg" style="border-radius: 15px; background: linear-gradient(to bottom right, #fef9c3, #fcd34d);">
                     <div class="text-center">
-                        <div class="bread-icon">🍞</div>
-                        <h1 class="mb-4">Weekly Bread Tracker</h1>
+                        <div class="bread-icon" style="font-size: 3rem; animation: bounce 2s infinite;">🍞</div>
+                        <h1 class="mb-4" style="font-family: 'Poppins', sans-serif; font-weight: 700; color: #374151;">Weekly Bread Tracker</h1>
                         
                         <!-- Day Selector -->
                         <div class="day-selector btn-group" role="group">
-                            <button type="button" class="btn btn-outline-primary day-btn active" data-day="Monday">Monday</button>
-                            <button type="button" class="btn btn-outline-primary day-btn" data-day="Tuesday">Tuesday</button>
-                            <button type="button" class="btn btn-outline-primary day-btn" data-day="Wednesday">Wednesday</button>
-                            <button type="button" class="btn btn-outline-primary day-btn" data-day="Thursday">Thursday</button>
-                            <button type="button" class="btn btn-outline-primary day-btn" data-day="Friday">Friday</button>
-                            <button type="button" class="btn btn-outline-primary day-btn" data-day="Saturday">Saturday</button>
-                            <button type="button" class="btn btn-outline-primary day-btn" data-day="Sunday">Sunday</button>
+                            <button type="button" class="btn btn-outline-primary day-btn active" style="border-radius: 20px; font-weight: bold;" data-day="Monday">🌞 Monday</button>
+                            <button type="button" class="btn btn-outline-primary day-btn" style="border-radius: 20px; font-weight: bold;" data-day="Tuesday">🌤️ Tuesday</button>
+                            <button type="button" class="btn btn-outline-primary day-btn" style="border-radius: 20px; font-weight: bold;" data-day="Wednesday">☁️ Wednesday</button>
+                            <button type="button" class="btn btn-outline-primary day-btn" style="border-radius: 20px; font-weight: bold;" data-day="Thursday">🌦️ Thursday</button>
+                            <button type="button" class="btn btn-outline-primary day-btn" style="border-radius: 20px; font-weight: bold;" data-day="Friday">🌧️ Friday</button>
+                            <button type="button" class="btn btn-outline-primary day-btn" style="border-radius: 20px; font-weight: bold;" data-day="Saturday">⛅ Saturday</button>
+                            <button type="button" class="btn btn-outline-primary day-btn" style="border-radius: 20px; font-weight: bold;" data-day="Sunday">🌈 Sunday</button>
                         </div>
-                        
-                        <div class="total-breads animate__animated animate__pulse" id="total-breads">Total Breads: 80</div>
+    
+                        <div class="total-breads animate__animated animate__pulse mt-4" id="total-breads" style="font-size: 1.5rem; font-weight: 600; color: #6b21a8; text-shadow: 2px 2px #e0f2fe;">Total Breads: 80</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
                     
                     <form id="bread-form" class="mt-4">
                         <div class="mb-3">
@@ -308,6 +313,38 @@
         font-size: 0.9rem;
         margin: 10px 0;
     }
+    /*here's what I added in case it doesn't track it*/ 
+    .bread-icon {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .bread-icon:hover {
+        transform: scale(1.2);
+    }
+    
+    .day-btn {
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+    
+    .day-btn:hover {
+        background: #2563eb; /* Vibrant blue */
+        color: #fff;
+        border-color: #2563eb;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
 </style>
 
 <!-- Add this right before the closing body tag -->
